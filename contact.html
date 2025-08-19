@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Sinthiya Telecom</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f4f4f9; font-family: Arial, sans-serif; }
+    header { background-color: #d32f2f; color: white; text-align: center; padding: 30px 10px; }
+    .contact-card { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .btn-send { background-color: #d32f2f; color: white; transition: 0.3s; }
+    .btn-send:hover { background-color: #b71c1c; }
+    .box { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📩 Contact Us</h1>
+    <p>Send us a message and we'll get back to you soon!</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sinthiya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-md-5">
+        <div class="box">
+          <h3>📞 Contact Info</h3>
+          <p><strong>Name:</strong> Md Abdul Momin</p>
+          <p><strong>Mobile:</strong> 01307085310</p>
+          <p><strong>Facebook:</strong> <a href="https://m.facebook.com/mnk810385" target="_blank">m.facebook.com/mnk810385</a></p>
+          <p><strong>Shop:</strong> Sinthiya Telecom</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-7">
+        <div class="contact-card">
+          <form action="https://formspree.io/f/xgvzjwqk" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="_replyto" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Your Phone (Optional)</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="+8801XXXXXXXXX">
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-send w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 mt-5" style="background:#222;color:#ccc;">
+    <p>📞 01307085310 | 🌐 <a href="https://m.facebook.com/mnk810385" style="color:#fff;">m.facebook.com/mnk810385</a></p>
+    <p>&copy; 2025 Sinthiya Telecom</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
